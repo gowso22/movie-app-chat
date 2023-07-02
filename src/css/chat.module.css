@@ -1,0 +1,86 @@
+.chatWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 30px;
+}
+
+.inputWrap{
+    display: flex;
+    gap : 20px
+}
+
+.inputUsername{
+    border: none;
+    border-bottom: 1px solid black;
+
+    width: 100px;
+    font-size: 18px;
+}
+.inputChatContent{
+    width: 70vw;
+
+    font-size: 35px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.inputUsername:focus,
+.inputChatContent:focus{
+    outline: none;
+}
+
+.messageBtn{
+    border: none;
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.messageWrap{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70vh;
+
+    padding: 50px;
+    overflow: auto;
+}
+
+
+.messageContent{
+    display: flex;
+    align-items: center;
+    gap : 15px;
+    
+    box-shadow: 0px 4px 6px #efefef;
+    padding: 45px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/*스크롤 이미지*/
+.messageContent::-webkit-scrollbar,
+.messageWrap::-webkit-scrollbar {
+    width: 10px;
+  }
+  .messageContent::-webkit-scrollbar-thumb,
+  .messageWrap::-webkit-scrollbar-thumb{
+    background-color: #2f3542;
+    border-radius: 10px;
+  }
+  .messageContent::-webkit-scrollbar-track,
+   .messageWrap::-webkit-scrollbar-track{    
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
